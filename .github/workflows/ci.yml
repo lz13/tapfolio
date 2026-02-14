@@ -96,9 +96,6 @@ jobs:
         env:
           RAILS_ENV: test
           RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
-          DB_USERNAME: postgres
-          DB_PASSWORD: password
-          DB_HOST: localhost
           # REDIS_URL: redis://localhost:6379/0
         run: |
           bin/rails db:create db:migrate
